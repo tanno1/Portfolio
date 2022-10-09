@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
+
+/* MAIN COLOR INFO */
+
+:root {
+    --darkest: #2f3e46;
+    --darker: #354f52;
+    --medium: #52796f;
+    --lightgreen: #84a98c;
+    --lightest: #cad2c5;
+    --black: #000814;
+    --offwhite: #FAF9F6;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', monospace;
+}
+
+/* VISITED LINKS DONT TURN PURPLE */
+
+a:visited {
+    text-decoration: none;
+}
+
+
+body {
+    min-height: 100vh;
+    background: var(--offwhite);
+}
+
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.main {
+    padding: 100px;
+    text-align: left;
+    display: inline-block;
+}
+
+.main #JobTitles { 
+    padding: 5px 0px;
+
+    /* Animation Properties */
+    overflow: hidden;
+    width: 0;
+    border-right: .15em solid black;
+    white-space: nowrap;
+    animation: typing 1s forwards;
+}
+
+@keyframes typing {
+    from {width: 0}
+    to { width: 100%}
+}
