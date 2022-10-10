@@ -1,0 +1,105 @@
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap');
+
+/* MAIN COLOR INFO */
+
+:root {
+    --darkest: #2f3e46;
+    --darker: #354f52;
+    --medium: #52796f;
+    --lightgreen: #84a98c;
+    --lightest: #cad2c5;
+    --black: #000814;
+    --offwhite: #FAF9F6;
+}
+
+/* OVERALL BODY */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 1.15rem;
+}
+
+/* VISITED LINKS DONT TURN PURPLE */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+
+body {
+    min-height: 100vh;
+    background: var(--offwhite);
+}
+
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.main {
+    padding: 100px;
+    text-align: left;
+    display: inline-block;
+}
+
+#sentence { 
+    padding: 5px 0px;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+
+#typing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#input-cursor {
+    display: inline-block;
+    width: 2px;
+    height: 42px;
+    background-color: black;
+    margin-left: 8px;
+
+    /*ANIMATION*/
+    animation: blink .6s linear infinite alternate;
+}
+
+@keyframes blink {
+    0% {opacity: 1;}
+    40% {opacity: 1;}
+    60% {opacity: 0;}
+    100% {opacity: 0;}
+  }
