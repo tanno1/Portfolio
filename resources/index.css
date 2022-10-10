@@ -1,4 +1,7 @@
+/* FONTS */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap');
 
 /* MAIN COLOR INFO */
 
@@ -17,7 +20,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', monospace;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 1.15rem;
 }
 
 /* VISITED LINKS DONT TURN PURPLE */
@@ -69,18 +73,33 @@ header ul li {
     display: inline-block;
 }
 
-.main #JobTitles { 
+#sentence { 
     padding: 5px 0px;
-
-    /* Animation Properties */
-    overflow: hidden;
-    width: 0;
-    border-right: .15em solid black;
-    white-space: nowrap;
-    animation: typing 1s forwards;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 1.15rem;
+    font-weight: bold;
 }
 
-@keyframes typing {
-    from {width: 0}
-    to { width: 100%}
+#typing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+#input-cursor {
+    display: inline-block;
+    width: 2px;
+    height: 42px;
+    background-color: black;
+    margin-left: 8px;
+
+    /*ANIMATION*/
+    animation: blink .6s linear infinite alternate;
+}
+
+@keyframes blink {
+    0% {opacity: 1;}
+    40% {opacity: 1;}
+    60% {opacity: 0;}
+    100% {opacity: 0;}
+  }
