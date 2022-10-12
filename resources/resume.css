@@ -45,6 +45,7 @@ body {
     background: var(--offwhite);
 }
 
+/*NAVBAR*/
 header {
     top: 0;
     left: 0;
@@ -66,9 +67,14 @@ header ul li {
     list-style: none;
     margin-left: 20px;
 }
-
-.main {
-    padding: 100px;
+/*MAIN RESUME TEXT*/
+.Main {
+    padding: 50px;
     text-align: left;
     display: inline-block;
+}
+
+/*SECTION TITLES*/
+#Education, #Work-Experience, #top, #skills, #activities, #extracurriculars, #coursework {
+    padding: 20px;
 }
