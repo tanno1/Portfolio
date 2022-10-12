@@ -5,6 +5,10 @@
 
 /* MAIN COLOR INFO */
 
+html {
+    font-size: 100%;
+}
+
 :root {
     --darkest: #2f3e46;
     --darker: #354f52;
