@@ -71,8 +71,19 @@ header ul li {
     margin-left: 20px;
 }
 
-.main {
+main {
     padding: 100px;
     text-align: left;
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid block;
+    border-radius: 5px;
+}
+
+#Section {
+    margin: 20px;
+    background-color: aqua;
+    height: 20px;
+    width: 20px;
 }

@@ -85,7 +85,7 @@ header ul li {
 }
 
 #top   {
-    font-size: 1.15rem;
+    font-size: 2rem;
 }
 
 #top #address {
@@ -93,7 +93,7 @@ header ul li {
 }
 
 .Main-Title {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-style: italic;
     text-decoration: underline;
 }
@@ -103,7 +103,7 @@ header ul li {
 }
 
 .description {
-    padding: 0px 20px;
+    padding: 0px 0px 20px 25px;
 }
 
 #Name-Date {
