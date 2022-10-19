@@ -72,18 +72,40 @@ header ul li {
 }
 
 main {
-    padding: 100px;
+    align-content: center;
+}
+
+
+#mech {
+    padding: 20px;
     text-align: left;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    border: 1px solid block;
-    border-radius: 5px;
 }
 
 #Section {
-    margin: 20px;
-    background-color: aqua;
-    height: 20px;
-    width: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+}
+
+#Title {
+    margin-top: 50px;;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+.number {
+    margin-left: 10px;
+}
+
+/* Increase the size of the box when hovering */
+#Section:hover {
+    transform: scale(1.1);
+    background-color: var(--offwhite);
 }
