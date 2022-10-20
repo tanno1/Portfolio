@@ -74,9 +74,16 @@ header ul li {
 }
 /*MAIN RESUME TEXT*/
 .Main {
-    padding: 50px;
-    text-align: left;
-    display: inline-block;
+    padding: 15px 50px;
+}
+
+.here {
+    text-decoration: underline !important;
+}
+
+#download {
+    width: 100%;
+    text-align: center;
 }
 
 /*SECTION TITLES*/

@@ -6,6 +6,7 @@
 /* MAIN COLOR INFO */
 
 html {
+    height: 100%;
     font-size: 100%;
 }
 
@@ -43,9 +44,8 @@ a:visited {
     text-decoration: none;
 }
 
-
 body {
-    min-height: 100vh;
+    height: 100%;
     background: var(--offwhite);
 }
 
@@ -75,14 +75,15 @@ header ul li {
     padding: 50px;
     text-align: left;
     display: inline-block;
+    width: 100%;
 }
 
 #about-me {
-    padding: 5px 0px; 
     font-size: 1.15rem;
-    justify-content: left;
     height: 538px;
     width: 385px;
+    display: flex;
+    margin-left: 50px;
 }
 
 #change-sentence { 
@@ -98,23 +99,25 @@ header ul li {
     display: flex;
     justify-content: left;
 }
-/* WILL FIX THIS LATER< ANIMATION DONT WORK RN
-#input-cursor {
-    display: inline-block;
-    width: 2px;
-    height: 42px;
-    background-color: black;
-    margin-left: 8px;
 
-    /*ANIMATION*/
-/*    
-    animation: blink .6s linear infinite alternate;
+/*Drop info hidden at first */
+.drop-content {
+    position: absolute;
+    display: none;
+    background-color: var(--offwhite);
+    border: #000814;
+    border-radius: 10%;
 }
 
-@keyframes blink {
-    0% {opacity: 1;}
-    40% {opacity: 1;}
-    60% {opacity: 0;}
-    100% {opacity: 0;}
-  }
-*/
+.dropdown :hover {
+    text-decoration: underline;
+}
+
+.dropdown:hover .dropbtn:hover .drop-content {
+    display: block;
+}
+
+#instagram, #phone, #email, #linkedin {
+    width: 32px;
+    height: 32px
+}
