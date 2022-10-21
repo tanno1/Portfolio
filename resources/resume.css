@@ -84,6 +84,7 @@ header ul li {
 #download {
     width: 100%;
     text-align: center;
+    margin-bottom: 50px
 }
 
 /*SECTION TITLES*/
@@ -93,10 +94,6 @@ header ul li {
 
 #top   {
     font-size: 2rem;
-}
-
-#top #address {
-    font-style: italic;
 }
 
 .Main-Title {
@@ -124,5 +121,12 @@ header ul li {
     font-size: .4rem;
 }
 
+/* FOOTER ITEMS */
+.contacts {
+    display: inline;
+}
 
-
+.contacts li {
+    display: inline;
+    margin-left: 20px;
+}
