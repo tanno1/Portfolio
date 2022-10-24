@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noah Tanner</title>
     <link rel='stylesheet' href="resources\index.css">
+    <script src="resources/script.js"></script>
 </head>
 
 <body>
     <!-- HEADER SECTION -->
     <header id="header"> 
-        <a id=#home class="logo">logo</a>
+        <img src="resources\images\Front.png" alt="Logo" id="logo">
         <ul id="navbar">
             <li>
                 <a href="html\resume.html">resume</a>
@@ -31,38 +32,36 @@
         </div>
     </div>
     <div id="about-me">
-        Hello! Welcome to my portfolio. I am an experienced creative with years of experience in a multitude of industries from startup clothing companies to industry leading electric vehicle companies. <br>
+        Hello! Welcome to my portfolio. I am an experienced creative with years of experience in a multitude of industries from startup clothing companies to industry leading electric vehicle companies.
         I am currently studying Mechanical Engineering with a concentration in Mechatronics at California Polytechnic State University in San Luis Obispo, CA. I expect
-        to graduate in the fall of 2023 at which point I will start working for a hands-on engineering startup. Some of my interests are consumer electronics, industrial design, 
+        to graduate in the fall of 2023 at which point I will start working for some hands-on engineering startup. Some of my interests are consumer electronics, industrial design, 
         artificial intelligence, gaming, aerospace, and automation. In my free time, I skateboard, game, draw, design clothes, and practice programming through
-        designing websites or making applications. <br>
+        designing websites or making applications. Creatively I use the name glue1, and you can see one of my logos in the top left of this page!
     </div>
     <footer>
         <div class="contacts">
             <div>
                 <a href="https://github.com/tanno1">
-                    <img src="resources\images\icons8-github-60.png" alt="GitHub" id="git" >
+                    <img src="resources\images\icons8-github-150.png" alt="GitHub" id="git" >
                 </a>
             </div>
             <div>
                 <a href="https://www.linkedin.com/in/noahtanner/">
-                    <img src="resources\images\icons8-linkedin-60.png" alt="LinkedIn" id="linkedin">
+                    <img src="resources\images\icons8-linkedin-150.png" alt="LinkedIn" id="linkedin">
                 </a>
             </div>
             <div>
                 <a href="mailto:noahetanner@gmail.com?subject=Contact from website">
-                    <img src="resources\images\icons8-gmail-logo-60.png" alt="Email" id="email">
+                    <img src="resources\images\icons8-gmail-150.png" alt="Email" id="email">
                 </a>
             </div>
-            <div id="disc-drop">
-                <a href="discord">
-                    <img src="resources\images\icons8-discord-new-60.png" alt="Discord" id="discord">
-                </a>
+            <div class="popup" onclick="PopUpFunc()">
+                    <img src="resources\images\icons8-discord-new-150.png" alt="Discord" id="discord">
+                    <span class="popuptext" id="myPopup">glue#3561</span>
             </div>
-            <div>
-                <a href="phone">
-                    <img src="resources\images\icons8-phone-60.png" alt="Phone" id="phone">
-                </a>
+            <div class="popup2" onclick="PopUpFunc2()">
+                    <img src="resources\images\icons8-phone-150.png" alt="Phone" id="phone">
+                    <span class="popuptext2" id="myPopup2">(206) 850-8848</span>
             </div>
         </div>
     </footer>
