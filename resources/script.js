@@ -10,7 +10,7 @@ function PopUpFunc2() {
 }
 
 //Portfolio Pop ups//
-function portfolio() {
-    var pops = document.getElementById("dirtbike-text");
-    pops.classList.toggle("section-show")
+function portfolio(el) {
+    const textEl = el.querySelector('.popuptext')
+    textEl.classList.toggle('show')
 }

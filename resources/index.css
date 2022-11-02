@@ -127,6 +127,7 @@ footer {
     display: inline-flex;
     justify-content: center;
     width: 100vw;
+    height: auto;
 }
 
 #git, #linkedin, #email, #phone, #discord {
